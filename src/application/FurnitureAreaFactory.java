@@ -1,6 +1,6 @@
 package application;
 
-public class FurnitureAreaFactory extends HouseItems{
+public class FurnitureAreaFactory extends HouseFactory{
 
 	@Override
 	public HouseEntity createItem(String item) {

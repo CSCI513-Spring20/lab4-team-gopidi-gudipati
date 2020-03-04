@@ -1,6 +1,6 @@
 package application;
 
-public class HouseAreaFactory extends HouseItems{
+public class HouseAreaFactory extends HouseFactory{
 
 	@Override
 	public HouseEntity createItem(String item) {
@@ -13,8 +13,8 @@ public class HouseAreaFactory extends HouseItems{
 		else if(item.equals("Hall")) {
 			return new HouseArea("Hall");	
 		}
-		else if(item.equals("Bed and Bath")) {
-			return new HouseArea("Bed and Bath");	
+		else if(item.equals("BedBath")) {
+			return new HouseArea("BedBath");	
 		}
 		else {
 			return null;

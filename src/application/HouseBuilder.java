@@ -130,18 +130,18 @@ class HouseArea implements Serializable, HouseEntity {
 public class HouseBuilder extends Application{
 	
 	
-	HouseItems area = new HouseAreaFactory();
+	HouseFactory area = new HouseAreaFactory();
 	HouseEntity house = area.createItem("House");
 	FurnitureAreaFactory farea= new FurnitureAreaFactory();
 	public void buildHouse(){
 		    HouseEntity kitchen = area.createItem("Kitchen");
 		    HouseEntity hall = area.createItem("Hall");
-		    HouseEntity bnb = area.createItem("Bed and Bath");
+		    HouseEntity bnb = area.createItem("BedBath");
 		    
-		    HouseEntity chairs = area.createItem("Chairs");
-		    HouseEntity organiser = area.createItem("Organiser");
-		    HouseEntity dining = area.createItem("Dining");
-		    HouseEntity bed = area.createItem("Bed");
+		    HouseEntity chairs = farea.createItem("Chairs");
+		    HouseEntity organiser = farea.createItem("Organiser");
+		    HouseEntity dining = farea.createItem("Dining");
+		    HouseEntity bed = farea.createItem("Bed");
 		    
 		    house.add(kitchen);
 		    house.add(hall);
